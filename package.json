@@ -1,0 +1,26 @@
+{
+  "name": "generator",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "_moduleAliases": {
+    "@models": "./models",
+    "@features": "./features",
+    "@middlewares": "./middlewares",
+    "@utilities": "./utilities"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.7",
+    "express": "~4.16.1",
+    "joi": "^17.13.3",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.9.5",
+    "morgan": "~1.9.1",
+    "nodemon": "^3.1.9"
+  }
+}
