@@ -14,7 +14,7 @@ const createModelSchema = Joi.object({
     .unknown(false)
     .prefs({ messages: { "object.unknown": "{{#label}} is not allowed in request body" } })
     .external(async (value) => {
-        const existingModel = await Modeö.exists({ name: value.name });
+        const existingModel = await Model.exists({ name: value.name });
         if (existingModel) {
             throw new Joi.ValidationError("Name already exists", [
                 { message: "Name already exists", path: ["name"], type: "string.duplicate", context: { key: "name", label: "name" } }
